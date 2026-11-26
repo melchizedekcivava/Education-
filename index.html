@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BRIGHT FUTURE CENTER – Learn Without Limits. Quality education, learning resources, online courses, and academic support for students worldwide.">
+  <title>BRIGHT FUTURE CENTER – Learn Without Limits | Modern Online Education</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    try {
+      const savedTheme = localStorage.getItem('valarie-bree-theme');
+      document.documentElement.dataset.theme = savedTheme || (
+        window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+      );
+    } catch {
+      document.documentElement.dataset.theme =
+        window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+  </script>
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <!-- Website Logo -->
+      <a href="#home" class="logo" aria-label="BRIGHT FUTURE CENTER Home">
+        <div class="logo-icon">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">BRIGHT FUTURE <span>CENTER</span></span>
+          <span class="logo-tagline">Learn Without Limits</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+          <li class="nav-item"><a href="#why-us" class="nav-link">Why Choose Us</a></li>
+          <li class="nav-item"><a href="#teachers" class="nav-link">Teachers</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <!-- Mobile Action Buttons inside drawer -->
+        <div class="mobile-auth-actions">
+          <button class="btn btn-outline theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode">
+            <i class="fa-solid fa-moon" aria-hidden="true"></i><span>Dark mode</span>
+          </button>
+          <button class="btn btn-outline btn-login" data-modal="login">Log In</button>
+          <button class="btn btn-primary btn-signup" data-modal="signup">Sign Up</button>
+        </div>
+      </nav>
+
+      <!-- Desktop Action Buttons -->
+      <div class="nav-actions">
+        <button class="btn btn-outline theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode">
+          <i class="fa-solid fa-moon" aria-hidden="true"></i><span>Dark mode</span>
+        </button>
+        <button class="btn btn-outline btn-login" data-modal="login">
+          <i class="fa-regular fa-user"></i> Log In
+        </button>
+        <button class="btn btn-primary btn-signup" data-modal="signup">
+          Sign Up Free <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <!-- Mobile Hamburger Toggle -->
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Open navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <i class="fa-solid fa-star text-amber"></i> Trusted by 5,000+ ambitious learners
+        </div>
+        <h1 class="hero-title">
+          Unlock Your Future Through <span class="gradient-text">Education.</span>
+        </h1>
+        <p class="hero-subtitle">
+          Discover new skills, explore knowledge, and achieve your dreams with quality education designed for the modern world.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#courses" class="btn btn-primary btn-lg">
+            <i class="fa-solid fa-compass"></i> Explore Courses
+          </a>
+          <button class="btn btn-secondary btn-lg" data-modal="signup">
+            Get Started <i class="fa-solid fa-arrow-trend-up"></i>
+          </button>
+        </div>
+
+        <!-- Hero Trust Highlights -->
+        <div class="hero-trust">
+          <div class="trust-avatars">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Student avatar">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Student avatar">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="Student avatar">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=120&q=80" alt="Student avatar">
+            <span class="avatar-count">+5k</span>
+          </div>
+          <div class="trust-text">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <span class="rating-num">4.9/5</span>
+            </div>
+            <p>From 1,200+ verified student reviews</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual with Interactive Badges -->
+      <div class="hero-visual">
+        <div class="hero-image-wrapper">
+          <div class="glow-backdrop"></div>
+          <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1000&q=80" 
+               alt="Group of diverse students studying together with modern laptops and tablets" 
+               class="hero-img">
+
+          <!-- Floating Badge 1: Top Rated -->
+          <div class="floating-badge badge-top-right">
+            <div class="badge-icon bg-orange-soft">
+              <i class="fa-solid fa-award text-orange"></i>
+            </div>
+            <div class="badge-info">
+              <span class="badge-title">Top Rated</span>
+              <span class="badge-desc">95% Course Approval</span>
+            </div>
+          </div>
+
+          <!-- Floating Badge 2: Active Instructors -->
+          <div class="floating-badge badge-bottom-left">
+            <div class="badge-icon bg-blue-soft">
+              <i class="fa-solid fa-chalkboard-user text-blue"></i>
+            </div>
+            <div class="badge-info">
+              <span class="badge-title">50+ Tutors</span>
+              <span class="badge-desc">1-on-1 Guidance</span>
+            </div>
+          </div>
+
+          <!-- Floating Badge 3: Progress Indicator -->
+          <div class="floating-badge badge-center-floating">
+            <div class="pulse-indicator"></div>
+            <div class="badge-info">
+              <span class="badge-title"><i class="fa-solid fa-bolt text-orange"></i> Live Learning</span>
+              <span class="badge-desc">Interactive Classrooms</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics Section -->
+  <section class="stats-section" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon-wrapper bg-blue-light">
+            <i class="fa-solid fa-user-graduate"></i>
+          </div>
+          <div class="stat-content">
+            <h3 class="stat-number" data-target="5000" data-suffix="+">0+</h3>
+            <p class="stat-label">Students Enrolled</p>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon-wrapper bg-orange-light">
+            <i class="fa-solid fa-book-open-reader"></i>
+          </div>
+          <div class="stat-content">
+            <h3 class="stat-number" data-target="100" data-suffix="+">0+</h3>
+            <p class="stat-label">Online Courses</p>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon-wrapper bg-blue-light">
+            <i class="fa-solid fa-person-chalkboard"></i>
+          </div>
+          <div class="stat-content">
+            <h3 class="stat-number" data-target="50" data-suffix="+">0+</h3>
+            <p class="stat-label">Professional Teachers</p>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon-wrapper bg-orange-light">
+            <i class="fa-solid fa-heart-circle-check"></i>
+          </div>
+          <div class="stat-content">
+            <h3 class="stat-number" data-target="95" data-suffix="%">0%</h3>
+            <p class="stat-label">Student Satisfaction</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Education Section -->
+  <section class="about-section" id="about">
+    <div class="container about-container">
+      <div class="about-visual">
+        <div class="about-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=900&q=80" 
+               alt="Passionate teacher guiding attentive students in a dynamic classroom" 
+               class="about-img">
+          
+          <!-- Experience Badge Overlay -->
+          <div class="about-experience-card">
+            <div class="exp-number">10+</div>
+            <div class="exp-text">
+              <strong>Years of Academic Excellence</strong>
+              <span>Empowering futures since 2014</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <div class="section-pill">
+          <i class="fa-solid fa-lightbulb"></i> About Education
+        </div>
+        <h2 class="section-title">
+          Education Opens Doors to <span class="gradient-text">Success.</span>
+        </h2>
+        <p class="about-description">
+          Education is the most powerful catalyst for personal growth, opportunity, and transformative change. 
+          At BRIGHT FUTURE CENTER, we believe that learning should never be confined by boundaries, backgrounds, or schedules.
+        </p>
+        <p class="about-description-secondary">
+          Through interactive technology, structured curricula, and passionate educators, we foster lifelong curiosity 
+          and empower students to build real-world competencies that prepare them for tomorrow's highest opportunities.
+        </p>
+
+        <!-- Key Pillars Grid -->
+        <div class="about-features-grid">
+          <div class="about-feature-item">
+            <div class="feature-bullet">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <div>
+              <h4>Lifelong Learning Mindset</h4>
+              <p>Programs designed to cultivate continuous personal and career curiosity.</p>
+            </div>
+          </div>
+
+          <div class="about-feature-item">
+            <div class="feature-bullet">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <div>
+              <h4>Action-Oriented Curricula</h4>
+              <p>Practical problem-solving, real-world case studies, and hands-on projects.</p>
+            </div>
+          </div>
+
+          <div class="about-feature-item">
+            <div class="feature-bullet">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <div>
+              <h4>Dedicated Student Mentorship</h4>
+              <p>Direct academic advice and guidance from experienced educators at every stage.</p>
+            </div>
+          </div>
+
+          <div class="about-feature-item">
+            <div class="feature-bullet">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <div>
+              <h4>Recognized Certifications</h4>
+              <p>Accredited course completion certificates to validate your hard work.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-action">
+          <a href="#courses" class="btn btn-primary">
+            Discover What You Can Learn <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Courses Section -->
+  <section class="courses-section" id="courses">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-pill">
+          <i class="fa-solid fa-graduation-cap"></i> Curated Programs
+        </div>
+        <h2 class="section-title">
+          Popular Courses for <span class="gradient-text">Every Aspirant</span>
+        </h2>
+        <p class="section-subtitle">
+          Explore our most sought-after programs, meticulously developed to build foundational mastery and practical capability.
+        </p>
+
+        <!-- Course Category Filters -->
+        <div class="course-filters" role="group" aria-label="Filter courses by category">
+          <button class="filter-btn active" data-filter="all" aria-pressed="true">All Courses</button>
+          <button class="filter-btn" data-filter="stem" aria-pressed="false">STEM & Science</button>
+          <button class="filter-btn" data-filter="tech" aria-pressed="false">Technology & Code</button>
+          <button class="filter-btn" data-filter="humanities" aria-pressed="false">Humanities & Business</button>
+        </div>
+      </div>
+
+      <!-- Courses Grid (6 Required Course Cards) -->
+      <div class="courses-grid">
+        
+        <!-- Course 1: Mathematics -->
+        <div class="course-card" data-category="stem">
+          <div class="course-thumb">
+            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80" alt="Mathematics Formulas and Calculations">
+            <span class="course-badge badge-math">Mathematics</span>
+            <span class="course-level">Intermediate</span>
+          </div>
+          <div class="course-body">
+            <div class="course-meta-top">
+              <span class="course-rating">
+                <i class="fa-solid fa-star"></i> 4.9 (420 reviews)
+              </span>
+              <span class="course-duration">
+                <i class="fa-regular fa-clock"></i> 36 Hours
+              </span>
+            </div>
+            <h3 class="course-title">Mastering Pure Mathematics & Applied Calculus</h3>
+            <p class="course-desc">
+              Build rock-solid mathematical foundations from algebra and trigonometry to advanced differential equations.
+            </p>
+            <div class="course-instructor">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&q=80" alt="Dr. Sarah Jenkins">
+              <div>
+                <strong>Dr. Sarah Jenkins</strong>
+                <span>Lead Math Chair</span>
+              </div>
+            </div>
+          </div>
+          <div class="course-footer">
+            <div class="course-price">
+              <span class="price-val">$49</span>
+              <span class="price-original">$89</span>
+            </div>
+            <button class="btn btn-sm btn-primary enroll-btn" data-course="Mastering Pure Mathematics">
+              Enroll Now <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Course 2: Science -->
+        <div class="course-card" data-category="stem">
+          <div class="course-thumb">
+            <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=800&q=80" alt="Science Laboratory Test Tubes and Chemical Solutions">
+            <span class="course-badge badge-science">Science</span>
+            <span class="course-level">All Levels</span>
+          </div>
+          <div class="course-body">
+            <div class="course-meta-top">
+              <span class="course-rating">
+                <i class="fa-solid fa-star"></i> 4.8 (380 reviews)
+              </span>
+              <span class="course-duration">
+                <i class="fa-regular fa-clock"></i> 42 Hours
+              </span>
+            </div>
+            <h3 class="course-title">General Science: Physics, Chemistry & Biology</h3>
+            <p class="course-desc">
+              Unpack the mysteries of natural phenomena, molecular chemistry, mechanics, and living ecosystems.
+            </p>
+            <div class="course-instructor">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80" alt="Prof. Alan Foster">
+              <div>
+                <strong>Prof. Alan Foster</strong>
+                <span>Physical Sciences</span>
+              </div>
+            </div>
+          </div>
+          <div class="course-footer">
+            <div class="course-price">
+              <span class="price-val">$59</span>
+              <span class="price-original">$99</span>
+            </div>
+            <button class="btn btn-sm btn-primary enroll-btn" data-course="General Science Mastery">
+              Enroll Now <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Course 3: Computer Studies -->
+        <div class="course-card" data-category="tech">
+          <div class="course-thumb">
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" alt="Laptop displaying computer programming code">
+            <span class="course-badge badge-cs">Computer Studies</span>
+            <span class="course-level">Beginner</span>
+          </div>
+          <div class="course-body">
+            <div class="course-meta-top">
+              <span class="course-rating">
+                <i class="fa-solid fa-star"></i> 5.0 (610 reviews)
+              </span>
+              <span class="course-duration">
+                <i class="fa-regular fa-clock"></i> 50 Hours
+              </span>
+            </div>
+            <h3 class="course-title">Computer Studies & Software Foundations</h3>
+            <p class="course-desc">
+              Understand computer architecture, algorithmic thinking, database logic, and essential modern programming.
+            </p>
+            <div class="course-instructor">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Prof. David Chen">
+              <div>
+                <strong>Prof. David Chen</strong>
+                <span>Software Architect</span>
+              </div>
+            </div>
+          </div>
+          <div class="course-footer">
+            <div class="course-price">
+              <span class="price-val">$65</span>
+              <span class="price-original">$120</span>
+            </div>
+            <button class="btn btn-sm btn-primary enroll-btn" data-course="Computer Studies & Software">
+              Enroll Now <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Course 4: English Language -->
+        <div class="course-card" data-category="humanities">
+          <div class="course-thumb">
+            <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=800&q=80" alt="Books, reading glasses, and literature study materials">
+            <span class="course-badge badge-english">English Language</span>
+            <span class="course-level">Comprehensive</span>
+          </div>
+          <div class="course-body">
+            <div class="course-meta-top">
+              <span class="course-rating">
+                <i class="fa-solid fa-star"></i> 4.9 (512 reviews)
+              </span>
+              <span class="course-duration">
+                <i class="fa-regular fa-clock"></i> 30 Hours
+              </span>
+            </div>
+            <h3 class="course-title">English Language Mastery & Academic Writing</h3>
+            <p class="course-desc">
+              Elevate verbal eloquence, grammar precision, public speaking confidence, and international academic prose.
+            </p>
+            <div class="course-instructor">
+              <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=120&q=80" alt="Elena Rostova">
+              <div>
+                <strong>Elena Rostova</strong>
+                <span>Linguistics Specialist</span>
+              </div>
+            </div>
+          </div>
+          <div class="course-footer">
+            <div class="course-price">
+              <span class="price-val">$39</span>
+              <span class="price-original">$75</span>
+            </div>
+            <button class="btn btn-sm btn-primary enroll-btn" data-course="English Language Mastery">
+              Enroll Now <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Course 5: Business Studies -->
+        <div class="course-card" data-category="humanities">
+          <div class="course-thumb">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Business analysis graphs, financial spreadsheets, and meeting notes">
+            <span class="course-badge badge-business">Business Studies</span>
+            <span class="course-level">Intermediate</span>
+          </div>
+          <div class="course-body">
+            <div class="course-meta-top">
+              <span class="course-rating">
+                <i class="fa-solid fa-star"></i> 4.9 (295 reviews)
+              </span>
+              <span class="course-duration">
+                <i class="fa-regular fa-clock"></i> 40 Hours
+              </span>
+            </div>
+            <h3 class="course-title">Modern Business Studies & Entrepreneurship</h3>
+            <p class="course-desc">
+              Master market analysis, financial budgeting, brand strategy, leadership, and startup organizational growth.
+            </p>
+            <div class="course-instructor">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Marcus Vance">
+              <div>
+                <strong>Marcus Vance, MBA</strong>
+                <span>Business Consultant</span>
+              </div>
+            </div>
+          </div>
+          <div class="course-footer">
+            <div class="course-price">
+              <span class="price-val">$55</span>
+              <span class="price-original">$95</span>
+            </div>
+            <button class="btn btn-sm btn-primary enroll-btn" data-course="Modern Business Studies">
+              Enroll Now <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Course 6: Technology -->
+        <div class="course-card" data-category="tech">
+          <div class="course-thumb">
+            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80" alt="Modern AI technology, robotics and artificial intelligence research">
+            <span class="course-badge badge-tech">Technology</span>
+            <span class="course-level">Cutting-Edge</span>
+          </div>
+          <div class="course-body">
+            <div class="course-meta-top">
+              <span class="course-rating">
+                <i class="fa-solid fa-star"></i> 5.0 (730 reviews)
+              </span>
+              <span class="course-duration">
+                <i class="fa-regular fa-clock"></i> 48 Hours
+              </span>
+            </div>
+            <h3 class="course-title">Emerging Technology: AI, Cloud & Automation</h3>
+            <p class="course-desc">
+              Discover generative AI, cloud computing paradigms, Internet of Things, and next-generation tech breakthroughs.
+            </p>
+            <div class="course-instructor">
+              <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=120&q=80" alt="Aria Montgomery">
+              <div>
+                <strong>Aria Montgomery</strong>
+                <span>AI Research Fellow</span>
+              </div>
+            </div>
+          </div>
+          <div class="course-footer">
+            <div class="course-price">
+              <span class="price-val">$79</span>
+              <span class="price-original">$149</span>
+            </div>
+            <button class="btn btn-sm btn-primary enroll-btn" data-course="Emerging Technology & AI">
+              Enroll Now <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- View All CTA -->
+      <div class="courses-cta text-center">
+        <p>Looking for a specific subject or customized syllabus?</p>
+        <a href="#contact" class="btn btn-outline">
+          <i class="fa-solid fa-comments"></i> Consult an Academic Advisor
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="why-us-section" id="why-us">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-pill">
+          <i class="fa-solid fa-shield-halved"></i> Our Unique Edge
+        </div>
+        <h2 class="section-title">
+          Why Choose <span class="gradient-text">BRIGHT FUTURE CENTER?</span>
+        </h2>
+        <p class="section-subtitle">
+          We combine world-class pedagogy, flexible technology, and continuous mentorship to deliver a learning experience that truly works.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1: Qualified Teachers -->
+        <div class="feature-card">
+          <div class="feature-card-icon bg-blue-grad">
+            <i class="fa-solid fa-chalkboard-user"></i>
+          </div>
+          <h3 class="feature-title">Qualified Teachers</h3>
+          <p class="feature-desc">
+            Learn directly from vetted university professors, licensed instructors, and passionate subject-matter veterans with verified credentials.
+          </p>
+          <ul class="feature-points">
+            <li><i class="fa-solid fa-check"></i> Rigorously vetted faculty</li>
+            <li><i class="fa-solid fa-check"></i> Real-time feedback on assignments</li>
+          </ul>
+        </div>
+
+        <!-- Feature 2: Affordable Learning -->
+        <div class="feature-card highlighted-feature">
+          <div class="feature-badge">Best Value</div>
+          <div class="feature-card-icon bg-orange-grad">
+            <i class="fa-solid fa-wallet"></i>
+          </div>
+          <h3 class="feature-title">Affordable Learning</h3>
+          <p class="feature-desc">
+            Quality education should be accessible to all. Enjoy premium courses with transparent pricing, zero hidden fees, and flexible financial aid.
+          </p>
+          <ul class="feature-points">
+            <li><i class="fa-solid fa-check"></i> Fair, student-friendly tuition</li>
+            <li><i class="fa-solid fa-check"></i> Free lifetime revision access</li>
+          </ul>
+        </div>
+
+        <!-- Feature 3: Online Learning Resources -->
+        <div class="feature-card">
+          <div class="feature-card-icon bg-blue-grad">
+            <i class="fa-solid fa-laptop-file"></i>
+          </div>
+          <h3 class="feature-title">Online Learning Resources</h3>
+          <p class="feature-desc">
+            Get unlimited access to interactive e-books, downloadable lecture slides, practice quizzes, and high-definition video archives anytime.
+          </p>
+          <ul class="feature-points">
+            <li><i class="fa-solid fa-check"></i> 10,000+ interactive practice questions</li>
+            <li><i class="fa-solid fa-check"></i> Offline downloadable study guides</li>
+          </ul>
+        </div>
+
+        <!-- Feature 4: Flexible Learning -->
+        <div class="feature-card">
+          <div class="feature-card-icon bg-orange-grad">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+          </div>
+          <h3 class="feature-title">Flexible Learning</h3>
+          <p class="feature-desc">
+            Learn at your own pace without sacrificing existing obligations. Seamlessly switch between your smartphone, tablet, laptop, or desktop.
+          </p>
+          <ul class="feature-points">
+            <li><i class="fa-solid fa-check"></i> Self-paced video modules</li>
+            <li><i class="fa-solid fa-check"></i> Multi-device synchronization</li>
+          </ul>
+        </div>
+
+        <!-- Feature 5: Student Support -->
+        <div class="feature-card">
+          <div class="feature-card-icon bg-blue-grad">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <h3 class="feature-title">Student Support</h3>
+          <p class="feature-desc">
+            Never feel stuck. Our dedicated academic counselors and technical support team are here 24/7 to answer questions and resolve bottlenecks.
+          </p>
+          <ul class="feature-points">
+            <li><i class="fa-solid fa-check"></i> 24/7 responsive live chat help</li>
+            <li><i class="fa-solid fa-check"></i> Collaborative peer study lounges</li>
+          </ul>
+        </div>
+
+        <!-- Feature 6: Career & Certification (Value-add) -->
+        <div class="feature-card">
+          <div class="feature-card-icon bg-orange-grad">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+          <h3 class="feature-title">Recognized Credentials</h3>
+          <p class="feature-desc">
+            Earn shareable certificates verified on blockchain that enhance your college applications, resumes, and LinkedIn profiles.
+          </p>
+          <ul class="feature-points">
+            <li><i class="fa-solid fa-check"></i> Verifiable digital credentials</li>
+            <li><i class="fa-solid fa-check"></i> Career portfolio building</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teachers / Instructors Section -->
+  <section class="teachers-section" id="teachers">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-pill">
+          <i class="fa-solid fa-users"></i> World-Class Faculty
+        </div>
+        <h2 class="section-title">
+          Learn From <span class="gradient-text">Inspiring Teachers</span>
+        </h2>
+        <p class="section-subtitle">
+          Our educators don't just teach theory—they ignite genuine curiosity and provide mentorship that lasts a lifetime.
+        </p>
+      </div>
+
+      <div class="teachers-grid">
+        <!-- Teacher 1 -->
+        <div class="teacher-card">
+          <div class="teacher-avatar-frame">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Dr. Sarah Jenkins">
+            <div class="teacher-socials">
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+          </div>
+          <div class="teacher-info">
+            <h3 class="teacher-name">Dr. Sarah Jenkins</h3>
+            <span class="teacher-role">Senior Mathematics Fellow</span>
+            <p class="teacher-bio">Former university department chair with 14+ years making complex mathematical concepts intuitive and enjoyable.</p>
+            <div class="teacher-stats">
+              <span><i class="fa-solid fa-book"></i> 12 Courses</span>
+              <span><i class="fa-solid fa-star text-amber"></i> 4.9 Rating</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Teacher 2 -->
+        <div class="teacher-card">
+          <div class="teacher-avatar-frame">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Prof. David Chen">
+            <div class="teacher-socials">
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+          </div>
+          <div class="teacher-info">
+            <h3 class="teacher-name">Prof. David Chen</h3>
+            <span class="teacher-role">Computer Science Lead</span>
+            <p class="teacher-bio">Seasoned tech architect and researcher focused on software engineering and democratizing modern coding skills.</p>
+            <div class="teacher-stats">
+              <span><i class="fa-solid fa-book"></i> 18 Courses</span>
+              <span><i class="fa-solid fa-star text-amber"></i> 5.0 Rating</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Teacher 3 -->
+        <div class="teacher-card">
+          <div class="teacher-avatar-frame">
+            <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=600&q=80" alt="Elena Rostova">
+            <div class="teacher-socials">
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+          </div>
+          <div class="teacher-info">
+            <h3 class="teacher-name">Elena Rostova</h3>
+            <span class="teacher-role">English & Literature Specialist</span>
+            <p class="teacher-bio">Published author and linguistics instructor passionate about effective rhetorical expression and academic excellence.</p>
+            <div class="teacher-stats">
+              <span><i class="fa-solid fa-book"></i> 10 Courses</span>
+              <span><i class="fa-solid fa-star text-amber"></i> 4.9 Rating</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Teacher 4 -->
+        <div class="teacher-card">
+          <div class="teacher-avatar-frame">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Marcus Vance">
+            <div class="teacher-socials">
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+          </div>
+          <div class="teacher-info">
+            <h3 class="teacher-name">Marcus Vance, MBA</h3>
+            <span class="teacher-role">Business & Strategy Mentor</span>
+            <p class="teacher-bio">Serial venture advisor with real-world experience guiding students to build robust economic literacy and leadership.</p>
+            <div class="teacher-stats">
+              <span><i class="fa-solid fa-book"></i> 15 Courses</span>
+              <span><i class="fa-solid fa-star text-amber"></i> 4.8 Rating</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-pill">
+          <i class="fa-solid fa-comments"></i> Student Stories
+        </div>
+        <h2 class="section-title">
+          Loved by Students <span class="gradient-text">Everywhere</span>
+        </h2>
+        <p class="section-subtitle">
+          Real feedback from students who transformed their grades, careers, and confidence with BRIGHT FUTURE CENTER.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-text">
+            "BRIGHT FUTURE CENTER's Mathematics and Computer Studies courses completely changed my perspective. The teachers explain tough concepts in an easy, visual way. I scored top of my class this semester!"
+          </p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Chloe Davies">
+            <div>
+              <strong>Chloe Davies</strong>
+              <span>High School Senior & Future CS Major</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-text">
+            "The flexibility is unmatched. Between my part-time job and family commitments, I could study Science and Business at 9 PM or 6 AM on my phone. The student support team answered within minutes!"
+          </p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80" alt="Michael Torres">
+            <div>
+              <strong>Michael Torres</strong>
+              <span>Undergraduate Scholar</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-text">
+            "The English Language curriculum gave me the precision I needed for academic writing and university entrance essays. I got accepted to my dream university with an honors scholarship!"
+          </p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=120&q=80" alt="Amina Bello">
+            <div>
+              <strong>Amina Bello</strong>
+              <span>Pre-Law Student</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Banner -->
+  <section class="cta-banner">
+    <div class="container cta-container">
+      <div class="cta-content">
+        <span class="cta-badge">Ready to take the next step?</span>
+        <h2 class="cta-title">Start Learning Today With BRIGHT FUTURE CENTER</h2>
+        <p class="cta-subtitle">
+          Join thousands of learners pursuing their academic goals. Create your free student account in less than two minutes.
+        </p>
+        <div class="cta-buttons">
+          <button class="btn btn-cta" data-modal="signup">
+            Create Free Account <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <a href="#courses" class="btn btn-outline-light">
+            Browse All Courses
+          </a>
+        </div>
+      </div>
+      <div class="cta-icon-graphic">
+        <i class="fa-solid fa-graduation-cap"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Academic Support Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-pill">
+          <i class="fa-solid fa-envelope-open-text"></i> Academic Support & Inquiries
+        </div>
+        <h2 class="section-title">
+          We’re Here to <span class="gradient-text">Help You Succeed</span>
+        </h2>
+        <p class="section-subtitle">
+          Have questions regarding course curricula, admissions, or tutoring? Reach out to our dedicated support counselors.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Information Cards -->
+        <div class="contact-info-panel">
+          <div class="contact-card">
+            <div class="contact-icon bg-blue-soft">
+              <i class="fa-solid fa-location-dot text-blue"></i>
+            </div>
+            <div>
+              <h4>Campus & Global HQ</h4>
+              <p>452 Innovation Blvd, Academic District, Suite 100, Cambridge, MA 02138</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon bg-orange-soft">
+              <i class="fa-solid fa-envelope text-orange"></i>
+            </div>
+            <div>
+              <h4>Email Admissions & Support</h4>
+              <p><a href="mailto:achiengvalarie902@gmail.com">achiengvalarie902@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon bg-blue-soft">
+              <i class="fa-solid fa-phone text-blue"></i>
+            </div>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="tel:0708519927">0708519927</a></p>
+            </div>
+          </div>
+
+          <!-- Quick FAQ Accordion Preview -->
+          <div class="support-promise">
+            <div class="promise-icon"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <strong>Average Response Guarantee</strong>
+              <p>Our academic advisors reply to all student inquiries within 2 hours during active study periods.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card">
+          <h3 class="form-title">Send Us a Direct Message</h3>
+          <p class="form-desc">Fill in the form below and an advisor will be in touch with syllabus materials and details.</p>
+
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name">Your Full Name *</label>
+                <div class="input-with-icon">
+                  <i class="fa-regular fa-user"></i>
+                  <input type="text" id="contact-name" name="name" placeholder="e.g. Alex Morgan" required>
+                </div>
+                <span class="field-error" id="name-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Email Address *</label>
+                <div class="input-with-icon">
+                  <i class="fa-regular fa-envelope"></i>
+                  <input type="email" id="contact-email" name="email" placeholder="alex@example.com" required>
+                </div>
+                <span class="field-error" id="email-error"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-subject">Interested Subject Area</label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-book"></i>
+                  <select id="contact-subject" name="subject">
+                    <option value="General Inquiry">General Question</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="Science">Science</option>
+                    <option value="Computer Studies">Computer Studies</option>
+                    <option value="English Language">English Language</option>
+                    <option value="Business Studies">Business Studies</option>
+                    <option value="Technology">Technology & AI</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-phone">Phone Number (Optional)</label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-phone"></i>
+                  <input type="tel" id="contact-phone" name="phone" placeholder="+1 (555) 000-0000">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">How can we assist you? *</label>
+              <textarea id="contact-message" name="message" rows="4" placeholder="Tell us about your learning goals or questions..." required></textarea>
+              <span class="field-error" id="message-error"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+              <i class="fa-regular fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-grid">
+          <!-- Col 1: Brand & Mission -->
+          <div class="footer-col brand-col">
+            <a href="#home" class="logo footer-logo">
+              <div class="logo-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="logo-text">
+                <span class="logo-title">Edu<span>Smart</span></span>
+                <span class="logo-tagline">Learn Without Limits</span>
+              </div>
+            </a>
+            <p class="footer-mission">
+              BRIGHT FUTURE CENTER is a premier online education destination dedicated to unlocking academic potential through accredited courses, world-class teachers, and compassionate student support.
+            </p>
+            <div class="social-links" aria-label="Social media channels">
+              <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="social-icon" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <!-- Col 2: Quick Links -->
+          <div class="footer-col">
+            <h4 class="footer-heading">Quick Navigation</h4>
+            <ul class="footer-links">
+              <li><a href="#home"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+              <li><a href="#about"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+              <li><a href="#courses"><i class="fa-solid fa-angle-right"></i> Courses</a></li>
+              <li><a href="#why-us"><i class="fa-solid fa-angle-right"></i> Why Choose Us</a></li>
+              <li><a href="#teachers"><i class="fa-solid fa-angle-right"></i> Our Teachers</a></li>
+              <li><a href="#contact"><i class="fa-solid fa-angle-right"></i> Contact & Support</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Popular Courses -->
+          <div class="footer-col">
+            <h4 class="footer-heading">Featured Subjects</h4>
+            <ul class="footer-links">
+              <li><a href="#courses"><i class="fa-solid fa-angle-right"></i> Mathematics Mastery</a></li>
+              <li><a href="#courses"><i class="fa-solid fa-angle-right"></i> Science & Physics</a></li>
+              <li><a href="#courses"><i class="fa-solid fa-angle-right"></i> Computer Studies & Coding</a></li>
+              <li><a href="#courses"><i class="fa-solid fa-angle-right"></i> English Language</a></li>
+              <li><a href="#courses"><i class="fa-solid fa-angle-right"></i> Business Studies</a></li>
+              <li><a href="#courses"><i class="fa-solid fa-angle-right"></i> Emerging Technology</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Newsletter & Contact Snippet -->
+          <div class="footer-col newsletter-col">
+            <h4 class="footer-heading">Stay Informed</h4>
+            <p class="footer-text">
+              Subscribe to our monthly educational digest for learning tips, exam preparation guides, and scholarship announcements.
+            </p>
+            <form id="newsletter-form" class="newsletter-form" novalidate>
+              <div class="newsletter-input-group">
+                <input type="email" id="newsletter-email" placeholder="Enter your email" required aria-label="Email address for newsletter">
+                <button type="submit" class="newsletter-btn" aria-label="Subscribe">
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </div>
+            </form>
+            <div class="footer-contact-mini">
+              <div><i class="fa-solid fa-phone text-orange"></i> <a href="tel:0708519927">0708519927</a></div>
+              <div><i class="fa-solid fa-envelope text-blue"></i> <a href="mailto:achiengvalarie902@gmail.com">achiengvalarie902@gmail.com</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 <strong>BRIGHT FUTURE CENTER – Learn Without Limits</strong>. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Preferences</a>
+          <a href="#">Accessibility Statement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Auth Modal (Login / Sign Up) -->
+  <div class="modal-overlay" id="auth-modal" aria-hidden="true">
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="active-modal-title">
+      <button class="modal-close" id="modal-close-btn" aria-label="Close dialog">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-header">
+        <div class="modal-logo">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>BRIGHT FUTURE CENTER</span>
+        </div>
+        <div class="modal-tabs">
+          <button class="tab-btn active" id="tab-login" data-tab="login-view">Log In</button>
+          <button class="tab-btn" id="tab-signup" data-tab="signup-view">Create Account</button>
+        </div>
+      </div>
+
+      <!-- Login Form View -->
+      <div class="modal-view active" id="login-view">
+        <h3 class="modal-title" id="active-modal-title">Welcome Back to BRIGHT FUTURE CENTER</h3>
+        <p class="modal-subtitle">Continue your personalized learning journey.</p>
+
+        <form id="login-form" class="auth-form" novalidate>
+          <div class="form-group">
+            <label for="login-email">Student Email Address</label>
+            <div class="input-with-icon">
+              <i class="fa-regular fa-envelope"></i>
+              <input type="email" id="login-email" placeholder="name@example.com" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="label-with-link">
+              <label for="login-password">Password</label>
+              <a href="#" class="forgot-link">Forgot password?</a>
+            </div>
+            <div class="input-with-icon">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" id="login-password" placeholder="••••••••" required>
+            </div>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" id="remember-me" checked>
+            <label for="remember-me">Remember me on this device</label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Log In to Dashboard</button>
+
+          <div class="social-divider"><span>or sign in with</span></div>
+
+          <div class="social-login-grid">
+            <button type="button" class="btn-social google-btn">
+              <i class="fa-brands fa-google"></i> Google
+            </button>
+            <button type="button" class="btn-social github-btn">
+              <i class="fa-brands fa-github"></i> GitHub
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Sign Up Form View -->
+      <div class="modal-view" id="signup-view">
+        <h3 class="modal-title">Start Learning Today</h3>
+        <p class="modal-subtitle">Join over 5,000+ students and unlock your full potential.</p>
+
+        <form id="signup-form" class="auth-form" novalidate>
+          <div class="form-group">
+            <label for="signup-name">Full Name</label>
+            <div class="input-with-icon">
+              <i class="fa-regular fa-user"></i>
+              <input type="text" id="signup-name" placeholder="e.g. Jordan Lee" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="signup-email">Email Address</label>
+            <div class="input-with-icon">
+              <i class="fa-regular fa-envelope"></i>
+              <input type="email" id="signup-email" placeholder="jordan@example.com" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="signup-password">Create Password</label>
+            <div class="input-with-icon">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" id="signup-password" placeholder="At least 8 characters" minlength="8" required>
+            </div>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" id="agree-terms" required>
+            <label for="agree-terms">I agree to the <a href="#">Terms of Service</a> & <a href="#">Privacy Policy</a></label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Create Student Account</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll To Top Button -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top of page">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="main.js"></script>
+</body>
+</html>
